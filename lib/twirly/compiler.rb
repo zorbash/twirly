@@ -15,5 +15,12 @@ module Twirly
 
       File.open(output_path, 'w') { |out| out << post.to_md }
     end
+
+    def fetch_user(user)
+      output_path = File.join Twirly.source_dir, 'users', "#{user.username}.html.md.erb"
+      puts "Creating #{output_path}"
+
+      File.open(output_path, 'w') { |out| out << user.to_md }
+    end
   end
 end
