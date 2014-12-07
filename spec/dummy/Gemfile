@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+
+group :development do
+  gem 'twirly', path: '/home/zorbash/dev/twirly'
+  gem 'rake'
+  gem 'pry'
+  gem 'sass'
+  gem 'coffee-script'
+  gem 'guard-sass'
+  gem 'guard-coffeescript'
+end

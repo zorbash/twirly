@@ -1,0 +1,19 @@
+.post {
+  margin-bottom: 10%;
+  text-decoration: none;
+  color: #525252;
+
+  .title {
+    font-size: 20px;
+    font-family: "EB Lato";
+    font-weight: 300;
+    padding-bottom: 35px;
+  }
+
+  .thumb {
+    display: block;
+    margin: 0 auto;
+
+    max-height: 348px;
+  }
+}

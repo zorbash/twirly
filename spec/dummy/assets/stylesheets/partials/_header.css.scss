@@ -1,0 +1,20 @@
+.header {
+  background-color: #FFF;
+  height: 46px;
+
+  padding-left: 15px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
+
+  .logo {
+    text-decoration: none;
+    font-family: "EB Lato";
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    line-height: 46px;
+
+    &:visited {
+      color: #333;
+    }
+  }
+}

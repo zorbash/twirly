@@ -1,0 +1,10 @@
+# A sample Guardfile
+# More info at https://github.com/guard/guard#readme
+
+guard 'sass', input: 'assets/stylesheets', output: 'public/stylesheets'
+
+guard 'coffeescript', output: 'public/javascripts' do
+  watch(%r{assets/javascripts/(.+\.coffee)})
+end
+
+notification :off
