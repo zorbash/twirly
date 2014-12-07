@@ -21,21 +21,18 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'pry'
-  spec.add_development_dependency 'pry-remote'
   spec.add_development_dependency 'pry-nav'
   spec.add_development_dependency 'rspec', '~> 2.14.1'
   spec.add_development_dependency 'guard-rspec'
-  spec.add_development_dependency 'fakefs'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'faker'
   spec.add_development_dependency 'factory_girl'
 
-  spec.add_dependency 'awesome_print'
-  spec.add_dependency 'thor'
-  spec.add_dependency 'ruby-trello'
-  spec.add_dependency 'liquid'
-  spec.add_dependency 'json', '~> 1.8.1'
+  spec.add_dependency 'thor', '~> 1.19'
+  spec.add_dependency 'ruby-trello', '~> 1.1'
+  spec.add_dependency 'liquid', '~> 3.0'
+  spec.add_dependency 'json', '>= 1.8.1'
 end
