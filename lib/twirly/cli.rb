@@ -8,5 +8,10 @@ module Twirly
     def pull
       Twirly::Commands::Pull.new(args, options).run
     end
+
+    desc 'pick', 'Fetch post by short id'
+    def pick(id)
+      Twirly::Commands::Pick.new(args, options).run
+    end
   end
 end
