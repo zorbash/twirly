@@ -13,5 +13,10 @@ module Twirly
     def pick(id)
       Twirly::Commands::Pick.new(args, options).run
     end
+
+    desc 'fetch_user', 'Fetch user by username'
+    def fetch_user(username)
+      Twirly::Commands::FetchUser.new(args, options).run
+    end
   end
 end

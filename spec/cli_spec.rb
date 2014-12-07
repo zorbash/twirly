@@ -14,4 +14,11 @@ describe Twirly::CLI do
       Twirly::CLI.start %w(pick 42)
     end
   end
+
+  describe '#fetch_user' do
+    it 'runs Twirly::Commands::FetchUser' do
+      Twirly::Commands::FetchUser.any_instance.should_receive(:run)
+      Twirly::CLI.start %w(fetch_user zorbash)
+    end
+  end
 end
