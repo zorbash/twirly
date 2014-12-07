@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'faker'
   spec.add_development_dependency 'factory_girl'
 
-  spec.add_dependency 'thor', '~> 1.19'
+  spec.add_dependency 'thor', '~> 0.19'
   spec.add_dependency 'ruby-trello', '~> 1.1'
   spec.add_dependency 'liquid', '~> 3.0'
   spec.add_dependency 'json', '>= 1.8.1'
