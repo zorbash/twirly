@@ -1,6 +1,7 @@
 ## Twirly
 
 [![Gem version](https://badge.fury.io/rb/twirly.png)](http://badge.fury.io/rb/twirly)
+[![code climate](https://d3s6mut3hikguw.cloudfront.net/github/Zorbash/twirly/badges/gpa.svg)](https://codeclimate.com/github/Zorbash/twirly)
 
 Twirly is a cli tool which converts [Trello](http://trello.com) cards to
 articles for use with ruby static site generators like 
