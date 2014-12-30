@@ -41,6 +41,10 @@ module Twirly
       @body ||= Liquid::Template.parse(card.desc.sub(/---.*---/mi, '').strip).render
     end
 
+    def published_at
+      due || updated_at
+    end
+
     def short_published_at
       published_at.strftime('%Y-%m-%d')
     end

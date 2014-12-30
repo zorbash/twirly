@@ -48,8 +48,18 @@ describe Twirly::Post do
   end
 
   describe '#published_at' do
-    it "is delegated to the card's due" do
-      expect(subject.published_at).to eq(subject.card.due)
+    context 'when the cards due is not nil' do
+      it "is set to the value of #due" do
+        expect(subject.published_at).to eq(subject.card.due)
+      end
+    end
+
+    context 'when the cards due is nil' do
+      before { post.due = nil }
+
+      it 'is set to the value of #updated_at' do
+        expect(subject.published_at).to eq(subject.updated_at)
+      end
     end
   end
 
