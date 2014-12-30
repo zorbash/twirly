@@ -50,7 +50,7 @@ module Twirly
     end
 
     def published?
-      published_at && card.labels.any? { |label| label.name == 'published' }
+      card.labels.any? { |label| label.name == 'published' }
     end
 
     def slug

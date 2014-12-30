@@ -26,8 +26,6 @@ FactoryGirl.define do
     association :attachments, factory: :trello_attachment
 
     trait :published do
-      due { (DateTime.now - 1).to_time }
-
       card_labels do
         [ { name: 'published' } ]
       end
@@ -38,7 +36,8 @@ FactoryGirl.define do
     end
 
     trait :unpublished do
-      due nil
+      card_labels { [] }
+      labels { [] }
     end
 
     trait :with_attachments do

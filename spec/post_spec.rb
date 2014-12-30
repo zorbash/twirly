@@ -102,7 +102,7 @@ describe Twirly::Post do
   end
 
   describe '#published?' do
-    context 'card is published (has published_at and the "published" label' do
+    context 'card is published (has the "published" label)' do
       let(:subject) do
         post = Twirly::Post.new(create(:trello_card, :published))
         post.card.stub(:labels).and_return([double(name: 'published')])
@@ -114,8 +114,12 @@ describe Twirly::Post do
       end
     end
 
-    context 'card is not published (has published_at and the "published" label' do
-      let(:subject) { Twirly::Post.new(create(:trello_card, :unpublished)) }
+    context 'card is not published (does not have a "published" label)' do
+      let(:subject) do
+        post = Twirly::Post.new(create(:trello_card, :unpublished))
+        post.card.stub(:labels).and_return([])
+        post
+      end
 
       it 'returns false' do
         expect(subject).to_not be_published
