@@ -14,7 +14,7 @@ module Twirly
         <<-VIDEO.strip_heredoc.strip
         <div class="embed-video-container">
           <iframe width="#{@width}" height="#{@height}"
-                  src="http://www.youtube.com/embed/#{@id}">
+                  src="https://www.youtube.com/embed/#{@id}">
           </iframe>
         </div>
         VIDEO
